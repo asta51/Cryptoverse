@@ -1,0 +1,88 @@
+/* src/components/Learn.css */
+.learn {
+  padding: 105px;
+  text-align: center;
+  background: url(../assets/bbg.jpg);
+  background-size: cover; /* Ensure the background image covers the entire element */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent repeating of the background image */
+  color: #000000; /* Default text color to ensure readability against dark background */
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  gap: 80px; /* Space between cards */
+  margin: 0 auto; /* Center the grid container */
+  max-width: 1500px; /* Limit the width of the grid container */
+}
+
+.learn-card {
+  background-color: #000000; /* Black background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Default shadow */
+  overflow: hidden;
+  transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow transition */
+  color: #000; /* Default text color */
+  position: relative; /* Added to handle absolute positioning of description */
+  cursor: pointer; /* Indicate that the card is clickable */
+}
+
+.learn-card:hover {
+  transform: scale(1.05);
+  color: #fff; /* Text color on hover */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); /* Glowing effect */
+}
+
+.card-image {
+  width: 68%; /* Full width of the card */
+  height: 200px; /* Adjust based on your card design */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  mix-blend-mode: difference;
+}
+
+.card-content {
+  padding: 15px;
+  position: absolute; /* Absolute positioning to overlay description */
+  bottom: 0; /* Aligns content at the bottom of the card */
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  color: #fff; /* Text color */
+  transition: opacity 0.3s ease; /* Smooth transition for opacity */
+  opacity: 0; /* Hidden by default */
+}
+
+.learn-card:hover .card-content {
+  opacity: 1; /* Show content on hover */
+}
+
+.card-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease, color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition for animation effects */
+}
+
+.card-title:hover {
+  transform: scale(1.1); /* Slightly enlarge the title */
+  color: #FFD700; /* Change color on hover (e.g., gold) */
+  text-decoration: underline; /* Underline effect on hover */
+}
+
+
+.card-description {
+  font-size: 14px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .card-container {
+      grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .card-container {
+      grid-template-columns: 1fr; /* One column on small screens */
+  }
+}

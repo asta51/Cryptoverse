@@ -1,0 +1,112 @@
+/* Chatbox.css */
+.chatbox-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.chatbox-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #3ab821;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.chatbox {
+    position: absolute;
+    bottom: 60px;
+    right: 0;
+    width: 350px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+}
+
+.chatbox .messages {
+    height: 400px;
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+}
+
+.chatbox .message {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.chatbox .message.user {
+    background-color:  #3ab82165;
+    align-self: flex-end;
+}
+
+.chatbox .input-box {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    background-color: #f9f9f9;
+    align-items: center;
+}
+
+.chatbox .input-box input {
+    flex: 1;
+    padding: 9px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 0px; /* Space between input and button */
+    width: 10%;
+}
+
+.chatbox .input-box button {
+    padding: 10px ;
+    background-color:  #3ab821;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.chatbox .input-box button:hover {
+    background-color: #ffffff;
+    color: #3ab821;
+}
+
+.chatbox .chatbox-header {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    background-color:  #3ab821;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px 8px 0 0;
+}
+
+.chatbox .chatbox-header span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.chatbox .chatbox-header .close-button {
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.chatbox .chatbox-header .close-button svg {
+    font-size: 16px;
+}

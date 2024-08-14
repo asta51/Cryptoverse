@@ -1,0 +1,88 @@
+/* src/components/Home.css */
+
+.home {
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20px;
+  }
+  
+  .hero {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+  }
+  
+  .hero h1 {
+    font-size: 3em;
+    margin: 0;
+  }
+  
+  .featured {
+    margin-top: 20px;
+  }
+  
+  .featured h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .featured .item {
+    margin-bottom: 20px;
+  }
+  
+  .featured .item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .signup {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .signup h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+  }
+  
+  .signup form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .signup .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .signup label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .signup input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+  }
+  
+  .signup button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  .signup button:hover {
+    background-color: #0056b3;
+  }
+  

@@ -1,0 +1,153 @@
+.bitcoins-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+  font-family: 'Titillium Web', Arial, sans-serif;
+  background: url('../assets/btc.jpg') no-repeat center center; /* Background image */
+  background-size: cover; /* Ensure the image covers the container */
+}
+/* Style for the header section */
+.bitcoin-header {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: url('../assets/btc.jpg') no-repeat center center; /* Background image */
+  background-size: cover; /* Ensure the image covers the header */
+}
+
+.bitcoin-header-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.bitcoin-header-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #ffffff;
+  padding: 40px 20px;
+}
+
+.bitcoin-header-content h1 {
+  font-size: 3rem;
+  margin: 0;
+  font-weight: 700;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.bitcoin-header-content p {
+  font-size: 1.25rem;
+  margin-top: 10px;
+  color: #f0a500;
+}
+
+.scroll-down-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #f0a500;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.scroll-down-button:hover {
+  background-color: #e07b00;
+  transform: translateY(-3px);
+}
+
+/* Style for the main content section */
+.content-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  background-color: #f4f4f4;
+}
+
+.content-image {
+  width: 100%;
+  max-width: 700px;
+  margin-bottom: 20px;
+}
+
+.image {
+  width: 70%;
+  height: auto;
+}
+
+.tradingview-widget-container {
+  width: 100%;
+  max-width: 1000px;
+  height: 500px;
+  margin-bottom: 40px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.content-text {
+  width: 100%;
+  max-width: 900px;
+  font-size: 2rem;
+  color: #333333;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px; /* Space between sections */
+}
+
+.content-text h2 {
+  font-size: 2rem;
+  color: #333333;
+  margin-bottom: 20px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.content-text p {
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .bitcoin-header-content h1 {
+    font-size: 2rem;
+  }
+
+  .bitcoin-header-content p {
+    font-size: 1rem;
+  }
+
+  .content-section {
+    padding: 30px 10px;
+  }
+
+  .content-image {
+    max-width: 90%;
+  }
+
+  .tradingview-widget-container {
+    height: 300px;
+  }
+
+  .content-text {
+    max-width: 95%;
+    padding: 20px;
+  }
+}

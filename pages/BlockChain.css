@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Container for the entire blockchain component */
+.blockchain-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Header styling with background image */
+.blockchain-header {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('/src/assets/bc.jpg') no-repeat center center; /* Background image */
+  mix-blend-mode: darken ;
+  background-size: cover; /* Ensure the image covers the header */
+  color: #ffffff;
+  padding: 0 20px;
+  backdrop-filter: blur(0.2rem); /* Apply background blur effect */
+}
+
+.blockchain-header-content {
+  text-align: center;
+  max-width: 80%;
+  background-color: rgba(0, 0, 0, 0.5); /* Slightly transparent background */
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.blockchain-header-content h1 {
+  font-size: 3rem;
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.blockchain-header-content p {
+  font-size: 1.2rem;
+  color: #f5a623;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+/* Main content section styling */
+.contentts-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  background: url('/src/assets/bcbg.jpg') no-repeat center center; /* Background image */
+  mix-blend-mode: darken ;
+  background-size: cover; /* Ensure the image covers the section */
+  backdrop-filter: blur(0.2rem); /* Apply background blur effect */
+}
+
+.contentts-text {
+  max-width: 900px;
+  width: 100%;
+  background-color: #0000005c; /* White background for content block */
+  color: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contentts-text h2 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.contentts-text p {
+  font-size: 1.5rem;
+  color: white;
+  line-height: 1.6;
+}
+
+.contentts-text ul {
+  list-style: disc;
+  padding-left: 20px;
+  font-size: 1.5rem;
+
+}
+
+.contentts-text li {
+  margin-bottom: 10px;
+}
+
+/* TradingView widget styling */
+.tradingview-widget {
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.tradingview-widget iframe {
+  width: 100%;
+  height: 500px;
+  border: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .blockchain-header-content h1 {
+    font-size: 2rem;
+  }
+
+  .blockchain-header-content p {
+    font-size: 1rem;
+  }
+
+  .content-text {
+    max-width: 90%;
+  }
+
+  .tradingview-widget iframe {
+    height: 400px;
+  }
+}
+
+.bod {
+    font-family: 'Raleway', sans-serif;
+    background-image: radial-gradient(circle at center, #899Dc4, #495D84);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(ellipse at bottom, #1b2735, #090a0f);
+    font-weight: 300;
+  }
+  .hall {
+    display: flex;
+    perspective: 10px;
+    transform: perspective(300px) rotateX(20deg);
+    will-change: perspective;
+    perspective-origin: center center;
+    transition: all 1.3s ease-out;
+    justify-content: center;
+    transform-style: preserve-3d;
+  }
+  .hall:hover {
+    perspective: 1000px;
+    transition: all 1.3s ease-in;
+    transform: perspective(10000px) rotateX(0deg);
+    .text {
+      opacity: 1;
+    }
+    & > div {
+      opacity: 1;
+      transition-delay: 0s;
+    }
+    .hexplainer {
+      opacity: 0;
+    }
+  }
+  
+  .hleft, .hcenter, .hright, .hlefter, .hrighter {
+    width: 200px;
+    height: 150px;
+    transform-style: preserve-3d;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    box-shadow: 0 0 20px 5px rgba(100, 100, 255, .4);
+    opacity: 0;
+    transition: all .3s ease;
+    transition-delay: 1s;
+    position: relative;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #58d;
+    cursor: pointer;
+    background-blend-mode: color-burn;
+    
+    &:hover {
+      box-shadow: 0 0 30px 10px rgba(100, 100, 255, .6);
+    background-color: #ccf;
+    }
+  }
+  .htext {
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all .3s ease;
+    bottom: 0;
+    left: 5px;
+    position: absolute;
+    will-change: transform;
+    color: #fff;
+    text-shadow: 0 0 5px rgba(100, 100, 255, .6)
+  }
+  .hlefter {
+    transform: translateX(-60px) translateZ(-50px) rotateY(-10deg);
+    background-image: url(https://cdn3.iconfinder.com/data/icons/other-icons/48/organization-512.png);
+  }
+  .hleft {
+    transform: translateX(-30px) translateZ(-25px) rotateY(-5deg);
+    background-image: url(https://cdn3.iconfinder.com/data/icons/other-icons/48/creative_draw-512.png);
+  }
+  .hcenter {
+    opacity: 1;
+    background-image: url(https://cdn3.iconfinder.com/data/icons/other-icons/48/app_window-512.png);
+  }
+  .hright {
+    transform: translateX(30px) translateZ(-25px) rotateY(5deg);
+    background-image: url(https://cdn3.iconfinder.com/data/icons/other-icons/48/cloud_weather-512.png);
+  }
+  .hrighter {
+    transform: translateX(60px) translateZ(-50px) rotateY(10deg);
+    background-image: url(https://cdn3.iconfinder.com/data/icons/other-icons/48/search-512.png);
+  }
+  .hexplainer {
+    font-weight: 300;
+    font-size: 2rem;
+    color: #fff;
+    transition: all .6s ease;
+    width: 100%;
+    height: 100%;
+    background-color: #303050;
+    background-image: radial-gradient(circle at center top, #cce, #33a);
+    border-radius: 10px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, .8);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .href {
+    background-color: #000;
+    background-image: linear-gradient(to bottom, #d80, #c00);
+    border-radius: 3px;
+    padding: 7px 10px;
+    position: absolute;
+    font-size: 16px;
+    bottom: 10px;
+    right: 10px;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 3px rgba(0, 0, 0, .4);
+    &::first-letter {
+      font-size: 12px;
+    }
+  }

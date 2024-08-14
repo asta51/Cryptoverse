@@ -1,0 +1,70 @@
+.memecoins-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+  }
+  
+  .memecoins-header {
+    background-color: #282c34;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #61dafb;
+  }
+  
+  .memecoins-header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  
+  .memecoins-header p {
+    font-size: 1.15rem;
+    margin-top: 10px;
+  }
+  
+  /* Main content styling */
+  .memecoins-content {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Section styling */
+  .memecoin-section {
+    margin-bottom: 40px;
+  }
+  
+  .memecoin-content {
+    margin-bottom: 20px;
+  }
+  
+  .memecoin-content h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .memecoin-content p {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: #666;
+  }
+  
+  /* TradingView widget styling */
+  .tradingview-widget {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  #tradingview_doge_chart,
+  #tradingview_pepe_chart,
+  #tradingview_floki_chart {
+    width: 100%;
+    height: 400px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  

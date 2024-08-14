@@ -1,0 +1,122 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Container for the entire page */
+.ethereum-container {
+  display: flex;
+  flex-direction: column;
+  /* Removed height: 100vh */
+  /* overflow: hidden; */ /* Prevent horizontal scrolling - Commented out */
+}
+
+/* Header Section */
+.ethereum-header {
+  position: relative;
+  width: 100%;
+  height: 50vh; /* Adjust height to fit the header image */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  overflow: hidden;
+}
+
+.ethereum-header-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the container without distortion */
+  z-index: 1; /* Ensure this is below other content */
+  transition: transform 0.5s ease;
+
+}
+.ethereum-header-image:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+.ethereum-header-content {
+  position: relative; /* Position content relative to the header */
+  z-index: 2; /* Ensure header content is above the header image */
+  text-align: center;
+  color: #ffffff; /* White text color for readability over the image */
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+}
+
+.ethereum-header-content h1 {
+  font-size: 3rem; /* Adjust size as needed */
+  margin: 0;
+  font-weight: bold; /* Emphasize header */
+}
+
+.ethereum-header-content p {
+  font-size: 1.25rem; /* Adjust size as needed */
+  margin-top: 10px; /* Space between heading and paragraph */
+}
+
+/* Main Content Section */
+.ethereum-content {
+  display: flex;
+  flex-direction: column; /* Stack sections vertically */
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background color */
+  flex: 1; /* Allow section to grow and fill available space */
+  gap: 40px; /* Space between sections */
+}
+
+/* Feature Section */
+.eth-feature {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  gap: 20px; /* Space between image and text */
+  background-color: #ffffff; /* White background for the feature sections */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted effect */
+}
+
+.eth-feature-image {
+  max-width: 200px; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.eth-feature-text {
+  max-width: 70%; /* Adjust width of text section */
+}
+
+.eth-feature-text h2 {
+  font-size: 2rem; /* Adjust size as needed */
+  color: #333; /* Dark text color */
+  margin: 0;
+}
+
+.eth-feature-text p {
+  font-size: 1.7rem; /* Adjust size as needed */
+  color: #666; /* Dark gray text color */
+  margin-top: 10px; /* Space between heading and paragraph */
+}
+
+/* TradingView Chart Section */
+.eth-chart {
+  background-color: #ffffff; /* White background for chart section */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted effect */
+}
+
+.eth-chart h2 {
+  font-size: 2rem; /* Adjust size as needed */
+  color: #333; /* Dark text color */
+  margin-bottom: 20px; /* Space below heading */
+}
+
+#tradingview_1234 {
+  width: 100%;
+  height: 500px; /* Adjust height as needed */
+}

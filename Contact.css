@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Root variables for colors and fonts */
+
+
+/* Scoped styles for Contact page */
+.contact-page {
+  padding: 2rem;
+  background-color: white;
+  color: var(--text-color);
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: auto;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: rgb(0 0 0 / 15%) 0px 8px 24px;
+}
+
+.contact-heading {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary);
+}
+
+.contact-info {
+  margin-bottom: 2rem;
+}
+
+.contact-info h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-info p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.contact-details {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-details li {
+  margin-bottom: 0.5rem;
+}
+
+/* Center the contact form elements */
+.contact-form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 32px;
+  border: 1px solid var(--primary);
+  background: transparent;
+  border-radius: 24px 4px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  max-width: 500px; /* Restrict maximum width for better alignment */
+}
+
+.contact-form textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.contact-form button {
+  padding: 14px 32px;
+  border: 1px solid var(--primary);
+  background-color: var(--primary);
+  color: #000000;
+  border-radius: 24px 4px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 500px; /* Match button width with input fields */
+}
+
+.contact-form button:hover {
+  box-shadow: rgb(0 0 0 / 15%) 0px 8px 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-heading {
+    font-size: 1.5rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    max-width: none; /* Ensure full width on small screens */
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.042a9df4.css",
+    "main.js": "/static/js/main.e4fa7a82.js",
+    "static/media/trade.png": "/static/media/trade.a2c09083fbde76e9cac2.png",
+    "static/media/ethereum-header.avif": "/static/media/ethereum-header.2f152d5ba31a5cf25f59.avif",
+    "static/media/hero-img.png": "/static/media/hero-img.66b9eb77caa3ac6d4fe8.png",
+    "static/media/dapps.avif": "/static/media/dapps.a5a30bc0ad7b8cb784d2.avif",
+    "static/media/smart-contracts.avif": "/static/media/smart-contracts.45bce1ef4efe66bdb2e8.avif",
+    "static/media/aa.jpg": "/static/media/aa.a8719e942a2fbd81d7d3.jpg",
+    "static/media/card1.jpg": "/static/media/card1.99bb70245aa9814a5638.jpg",
+    "static/media/solbg.jpg": "/static/media/solbg.176b030cd5c63ec1c7c8.jpg",
+    "static/media/side1.svg": "/static/media/side1.53515a777e74d53e75422c74d2149401.svg",
+    "static/media/top.png": "/static/media/top.6e1e7981241f028f4394.png",
+    "static/media/back.png": "/static/media/back.520e5e0610fe65418df3.png",
+    "static/media/card3.jpg": "/static/media/card3.cdf52aed618f1c02a07e.jpg",
+    "static/media/card4.jpg": "/static/media/card4.1103439f545ed8355601.jpg",
+    "index.html": "/index.html",
+    "main.042a9df4.css.map": "/static/css/main.042a9df4.css.map",
+    "main.e4fa7a82.js.map": "/static/js/main.e4fa7a82.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.042a9df4.css",
+    "static/js/main.e4fa7a82.js"
+  ]
+}
